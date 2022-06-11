@@ -1,0 +1,118 @@
+@import "../../../sass/utils/theme-variable";
+
+.home-posts-holder {
+  .home-posts-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(1400px / 3), 1fr));
+    gap: 40px;
+  }
+  .home-post {
+    width: 100%;
+  }
+  .home-post-content {
+    position: relative;
+    height: 500px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 24;
+  }
+  .home-post-image {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    height: 235px;
+    background-color: #ffff;
+    z-index: 8;
+    /* border: 1px solid $primary; */
+    img {
+      overflow: hidden;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      transition: all 0.5s;
+      &:hover {
+        overflow: hidden;
+        transform: scale(1.14) rotate(5deg);
+      }
+    }
+
+    .btn {
+      &.category {
+        position: absolute;
+      }
+    }
+  }
+  .home-post-desc {
+    padding: 235px 20px 0 20px;
+    flex: 1;
+  }
+  .home-post-title {
+    height: 70px;
+    h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 0.9;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+  }
+  .home-post-author {
+    .author-profil {
+      display: flex;
+    }
+    .author-photo {
+      flex: 0.3;
+      height: 50px;
+      border-radius: 0.3rem;
+      margin-right: 15px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .desc {
+      padding-left: 10px;
+      .author-name {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .time-write {
+        font-size: 0.9rem;
+        opacity: 0.5;
+      }
+    }
+  }
+  .home-call-action {
+    padding-top: 15px;
+    .home-call-btn {
+      color: $primary;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+  .icons-call-to-actions {
+    border-top: 1px solid #d3d3d3;
+    padding: 10px 20px;
+    text-align: center;
+    .icon-call-action {
+      margin-left: 8px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      font-weight: 600;
+      img {
+        display: inline-block;
+        width: 20px;
+        margin-bottom: -5px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

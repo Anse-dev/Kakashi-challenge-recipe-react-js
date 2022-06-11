@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+@import "./utils/theme-variable";
+html {
+  font-size: 17px;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: $color-text;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.pages {
+  position: relative;
+  padding: 0px 70px 0px 333px;
+
+  @media screen and (max-width: 1400px) {
+    padding-left: 300px;
+  }
+  @media screen and (max-width: 1000px) {
+    padding-left: 0;
+  }
+}

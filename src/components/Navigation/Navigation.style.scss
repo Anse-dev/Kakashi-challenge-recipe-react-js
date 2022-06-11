@@ -1,0 +1,27 @@
+.menuNavigation-holder {
+  flex: 1 0 auto;
+  width: 100%;
+}
+.menus-list {
+  padding: 2vw 40px 2vw 90px;
+  position: relative;
+
+  display: block;
+  text-align: left;
+  .menu-item {
+    display: block;
+    padding-bottom: 8px;
+  }
+  .menu-link {
+    display: inline-block;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 3px 5px;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background-color: #c00a27;
+      color: #fff;
+    }
+  }
+}
